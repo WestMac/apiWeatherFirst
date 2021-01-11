@@ -1,0 +1,6 @@
+html {
+	height: 100%;
+	background:cover;
+	background: rgb(44,80,138);
+	background: linear-gradient(rgba(44,80,138,1) 2%, rgba(149,129,255,1) 100%); 
+}
