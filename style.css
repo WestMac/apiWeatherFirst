@@ -3,4 +3,20 @@ html {
 	background:cover;
 	background: rgb(44,80,138);
 	background: linear-gradient(rgba(44,80,138,1) 2%, rgba(149,129,255,1) 100%); 
+	margin:0;
+	padding: 0;
+}
+.container {
+	
+	text-align: center;
+	justify-self:center;
+}
+#lInput {
+	display: block;
+	margin:15px 15px 15px 0px;
+}
+
+table,th,td {
+	border:1px solid black;
+	
 }
