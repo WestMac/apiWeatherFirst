@@ -23,3 +23,7 @@ table,th,td {
 	border:1px solid black;
 	
 }
+
+.state:first-letter {
+	text-transform: capitalize;
+}
