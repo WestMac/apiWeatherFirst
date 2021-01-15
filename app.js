@@ -7,6 +7,7 @@ let status = document.querySelector('.state');
 let temp = document.querySelector('.degree');
 let search = document.querySelector('#search')
 let searchS = document.querySelector('.searchS')
+let pressureS = document.querySelector('.pressure');
 
 window.addEventListener('load', function() {
 
@@ -28,7 +29,8 @@ window.addEventListener('load', function() {
 				console.log(data);
 				temp.innerHTML = Math.round(data.main.temp) + '&#8451;'
 				city.innerHTML = data.name;
-				status.innerHTML = data.weather[0].description;
+				status.lastChild.src = `http:openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+				pressureS.innerHTML = data.main.pressure + ' hPa'
 			})
 			
 		});
@@ -43,7 +45,7 @@ searchS.addEventListener('keypress', function(e) {
 		let cityNow = searchS.value;
 		let weather = prepend+`api.openweathermap.org/data/2.5/weather?q=${cityNow}&units=metric&appid=${ApiKey}`
 	
-fetch(weather)
+			fetch(weather)
 				.then(function(response)  {
 				return response.json();
 				})
@@ -52,7 +54,7 @@ fetch(weather)
 				console.log(data);
 				temp.innerHTML = Math.round(data.main.temp) + '&#8451;'
 				city.innerHTML = data.name;
-				status.innerHTML = data.weather[0].description;
+				status.lastChild.src = `http:openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
 			})
 
 

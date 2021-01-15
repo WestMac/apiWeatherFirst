@@ -6,24 +6,64 @@ html {
 	margin:0;
 	padding: 0;
 	color:white;
+	font-size: 1vw;
+}
+.card {
+	overflow:hidden;
+	justify-content: center;
+	text-align: center;
+	height: 50vh;
+	border:1px solid black;
+	width: 20vw;
+	margin:0 auto;
+	margin-top: 15px;
+	border-radius: 10%;
+	box-shadow:inset 0px 0px 14px 0px rgba(42,42,42,.52); 
+	border-style:groove; 
+	background-color: #2196f3;
 }
 
-
 .container {
-	
 	text-align: center;
 
 	}
-#lInput {
+#search {
+	font-size:3em;
+	letter-spacing: 3px;
+	font-weight: 600;
 	display: block;
 	margin:15px 15px 15px 0px;
 }
 
-table,th,td {
-	border:1px solid black;
-	
+.searchS {
+	position: relative;
+	border-style: none;
+	margin:0 auto;
+	width: 15vw;
+	border-radius: 10%;
+	border-color:#cccccc; 
+	padding:8px; 
+	font-size:18px; 
+	text-align:center; 
+	border-radius:20px; 
+	border-style:groove; 
+	border-width:1px; 
+	box-shadow:inset 0px 0px 14px 0px rgba(42,42,42,.52); 
+	text-shadow:0px 0px 10px rgba(42,42,42,.75); 
+	font-weight:normal; 
+	font-style:none; 
+	font-family:serif;  
+
+}
+.searchS:focus {
+	outline:none;
 }
 
 .state:first-letter {
 	text-transform: capitalize;
+}
+
+.icon {
+	width: 5.41vw;
+	height: 11.4vh;
 }
